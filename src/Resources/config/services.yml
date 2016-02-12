@@ -1,4 +1,12 @@
 services:
+    contao.controller.backend_csv_import:
+        class: Contao\CoreBundle\Controller\BackendCsvImportController
+        arguments:
+            - "@database_connection"
+            - "@contao.framework"
+            - "@request_stack"
+            - "@security.token_storage"
+
     contao.data_collector:
         class: Contao\CoreBundle\DataCollector\ContaoDataCollector
         public: false

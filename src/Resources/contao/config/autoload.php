@@ -252,6 +252,7 @@ TemplateLoader::addFiles(array
 	'analytics_piwik'     => 'vendor/contao/core-bundle/src/Resources/contao/templates/analytics',
 	'be_ace'              => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
 	'be_confirm'          => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
+	'be_csv_import'       => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
 	'be_diff'             => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
 	'be_error'            => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
 	'be_forbidden'        => 'vendor/contao/core-bundle/src/Resources/contao/templates/backend',
