@@ -2,10 +2,10 @@ services:
     contao.controller.abstract_csv_import:
         class: Contao\CoreBundle\Controller\AbstractCsvImportController
         abstract: true
-        calls:
-            - ["setConnection", ["@database_connection"]]
-            - ["setFramework", ["@contao.framework"]]
-            - ["setTokenStorage", ["@security.token_storage"]]
+        arguments:
+            - "@database_connection"
+            - "@contao.framework"
+            - "@security.token_storage"
 
     contao.controller.backend_csv_import:
         class: Contao\CoreBundle\Controller\BackendCsvImportController
